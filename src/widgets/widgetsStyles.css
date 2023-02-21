@@ -1,0 +1,119 @@
+.navContainer {
+  background-color: #050505;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+}
+.menuBtnContainer {
+  height: 24px;
+  width: 49px;
+  display: flex;
+}
+.navContainer .menuBtn {
+  transition: 0.3s ease-in-out all;
+}
+.navContainer ul {
+  position: absolute;
+  top: 90px;
+  background: #050505;
+  left: 0;
+  right: 0;
+  padding: 80px 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: all 0.3s ease;
+}
+
+.navContainer ul li {
+  text-align: center;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 64px;
+  transition: 0.3s ease-in-out all;
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.navContainer ul li::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  transform: translateY(50%);
+  /* left: 0; */
+  width: 0;
+  left: -15px;
+  height: 8px;
+  background: currentColor;
+  transition: width 0.25s ease;
+  margin: auto 0;
+}
+
+.navContainer ul li:hover::after {
+  width: 125%;
+}
+
+.footerContainer {
+  padding: 76.5px 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footerContainer div:nth-child(2) {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .navContainer {
+    padding: 30px 90px;
+  }
+  .footerContainer {
+    padding: 76.5px 90px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/* 
+
+.dropdown_menu-1
+  for num in (1..5)
+     .dropdown_item-{num} {}
+       transform-origin: top center
+       animation: slideDown 300ms (num * 60ms) ease-in-out forwards
+     
+         
+@keyframes slideDown {
+  0% { 
+    opacity: 0
+    transform: translateY(-60px)
+  }
+
+  100% {
+    opacity: 1
+    transform: translateY(0)
+  }
+} */
+
+@media screen and (min-width: 764px) {
+  .navContainer ul {
+    padding: 80px 50px;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .navContainer ul li {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+/* @media screen and (min-width: 1024px) {} */

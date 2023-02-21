@@ -1,0 +1,117 @@
+.heroContainer {
+  background: #050505;
+  color: #ffffff;
+  padding: 80px 20px 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+  align-items: flex-end;
+}
+.heroContainer h2 {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 56px;
+  margin-bottom: 30px;
+}
+.heroContainer div:first-child {
+  width: 100%;
+}
+.heroContainer div:nth-child(3) {
+  width: 100%;
+}
+.projectListContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 24px;
+  padding: 40px 20px;
+}
+.projectCardContainer {
+  border-radius: 24px;
+  width: 100%;
+  height: 371.56px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* ba */
+}
+
+.avantContainer {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 109.66px;
+  /* line-height: 160px; */
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  padding: 200px 0px;
+}
+.avantContainer p {
+  display: none;
+}
+.homeContactContainer {
+  padding: 160px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1024px) {
+  .heroContainer {
+    padding: 112px 90px 113px 90px;
+    height: 720px;
+    max-height: 720px;
+  }
+  .heroContainer div:first-child {
+    width: 897px;
+    max-width: 897px;
+  }
+  .heroContainer h2 {
+    font-size: 67.77px;
+    line-height: 96px;
+    margin-bottom: 0;
+    padding-right: 30px;
+  }
+  .heroContainer div:nth-child(2) {
+    width: 309px;
+    max-width: 309px;
+  }
+  .projectListContainer {
+    padding: 0 90px;
+    margin-top: 200px;
+  }
+  .projectListContainer div:nth-child(2) {
+    display: none;
+  }
+  .projectCardContainer {
+    height: 800px;
+    max-height: 800px;
+  }
+  .avantContainer {
+    padding: 200px 90px;
+  }
+  .avantContainer marquee {
+    display: none;
+  }
+  .avantContainer p {
+    display: block;
+  }
+  .homeContactContainer {
+    padding: 160px 90px;
+  }
+  .homeContactContainer p:nth-child(1),
+  .homeContactContainer p:nth-child(2) {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25.89px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+  .homeContactContainer p:nth-child(3) {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 67.77px;
+    line-height: 80px;
+  }
+}
