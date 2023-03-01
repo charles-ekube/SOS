@@ -14,7 +14,7 @@
   transition: 0.3s ease-in-out all;
 }
 .navContainer ul {
-  position: absolute;
+  position: fixed;
   top: 90px;
   background: #050505;
   padding: 80px 90px;

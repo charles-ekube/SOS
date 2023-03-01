@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ActiveMenu, InactiveMenu, LOGO } from "../assets";
 import MenuBlack from '../assets/images/inactiveMenuBlack.svg';
 import LogoBlack from '../assets/images/logoBlack.svg';
@@ -9,11 +9,14 @@ export default function NavBar(props) {
     const [navbar, setNavbar] = useState(false);
     const toggler = () => {
         setNavbar(prevState => !prevState)
+
     }
+
+
 
     return (
         <>
-            <nav className={"navContainer"} style={{ background: props.bg }}>
+            <nav className={"navContainer"} style={{ background: props.bg, position: navbar ? 'fixed' : '', left: '0', right: '0' }} >
                 <section>
                     <Link to={'/'}>
                         {props.bg === '#ffffff' ? <img src={LogoBlack} alt='logo' /> :
@@ -23,18 +26,19 @@ export default function NavBar(props) {
                 <section>
                     {navbar ?
                         <div className={"menuBtnContainer"} onClick={toggler} style={{ alignItems: navbar ? 'flex-end' : 'center' }}>
-                            {props.bg === '#ffffff' ? <img src={MenuBlack} alt='icon' className={'menuBtn'} style={{ border: '1px solid red ' }} /> :
-                                <img src={ActiveMenu} alt='icon' className={'menuBtn'} style={{ border: '1px solid red ' }} />}
+
+                            <img src={ActiveMenu} alt='icon' className={'menuBtn'} />
                         </div>
                         :
                         <div className={"menuBtnContainer"} onClick={toggler} >
-                            <img src={InactiveMenu} alt='icon' className={'menuBtn'} />
+                            {props.bg === '#ffffff' ? <img src={MenuBlack} alt='icon' className={'menuBtn'} /> :
+                                <img src={InactiveMenu} alt='icon' className={'menuBtn'} />}
                         </div>
                     }
 
                 </section>
                 {navbar &&
-                    <ul>
+                    <ul >
                         <NavLink to={'/work'} className={({ isActive }) => (isActive ? 'active' : '')} >
                             <li>WORK</li>
                         </NavLink>
