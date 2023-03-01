@@ -1,0 +1,135 @@
+.workHeroContainer {
+  height: 100%;
+  color: #ffffff;
+  padding: 88px 20px 96px 20px;
+}
+.workHeroContainer h2 {
+  line-height: 56px;
+  font-weight: 500;
+  font-size: 41.89px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 144px;
+}
+.workHeroContainer div {
+  display: flex;
+  justify-content: center;
+}
+
+.workProjectListContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+  padding: 40px 20px;
+}
+.workViewContainer {
+  padding: 0 20px;
+}
+.workViewHeroContainer h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 41.89px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.workViewHeroContainer p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.workViewHeroContainer img {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.workArticleContainer {
+  color: #ffffff;
+}
+.workArticleContainer h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25.89px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-bottom: 52px;
+}
+.workArticleContainer p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  padding-bottom: 20px;
+}
+.workArticleContainer article p:nth-child(4) {
+  padding-bottom: 40px;
+}
+.workImagesContainer {
+  padding: 120px 0;
+}
+.workImagesContainer img {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .workHeroContainer {
+    padding: 128px 271px 160px 271px;
+  }
+  .workHeroContainer h2 {
+    line-height: 96px;
+    font-size: 67.77px;
+    margin-bottom: 161px;
+  }
+  .workProjectListContainer {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 80px 90px;
+  }
+  .workViewContainer {
+    padding: 0 90px;
+  }
+  .workViewHeroContainer {
+    padding: 80px 0;
+  }
+  .workViewHeroContainer h2 {
+    line-height: 51px;
+  }
+  .workViewHeroContainer p {
+    margin-bottom: 80px;
+    font-size: 14px;
+  }
+  .workArticleContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .workArticleContainer h1 {
+    font-size: 41.89px;
+    line-height: 51px;
+    margin-bottom: 0px;
+    padding-right: 87px;
+  }
+
+  .workArticleContainer p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 40px;
+  }
+  .workArticleContainer article p:nth-child(4) {
+    padding-bottom: 80px;
+  }
+  .workArticleContainer ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 0;
+  }
+  .workImagesContainer {
+    padding: 160px 0;
+  }
+  .workImagesContainer img {
+    margin-bottom: 26px;
+  }
+}

@@ -3,7 +3,7 @@ import '../assets/styles/homeStyles.css';
 
 const ProjectsCard = (props) => {
     return (
-        <section className={'projectCardContainer'} style={{ backgroundImage: props.url, }}>
+        <section className={'projectCardContainer'} style={{ backgroundImage: props.url, }} onClick={props.onClick}>
             <div className={'projectCardOverlay'}>
                 <div className={'projectTitleContainer'}>
                     <h5>{props.projectTitle}</h5>

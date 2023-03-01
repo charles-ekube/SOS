@@ -1,10 +1,10 @@
-import Home from "./pages/Home";
-import NavBar from "./widgets/Navigation";
+import RoutesContainer from "./routes/Routes";
+
 
 function App() {
   return (
     <>
-      <Home />
+      <RoutesContainer />
     </>
   );
 }
